@@ -16,13 +16,11 @@
 	justify-content: space-between;
 	font-weight: wrap;
 }
-
 .cards > :nth-child(1) {
-	display: flex;
 	align-items: center;
+	display: flex;
 	gap: 0.8rem;
 }
-
 .card {
 	display: flex;
 	flex-direction: column;
@@ -34,12 +32,10 @@
 	font-size: 0.8rem;
 }
 
-
 .card > :nth-child(2) {
-	font-size: 1.1em;
+	font-size: 1.1rem;
 	font-weight: 500;
 }
-
 .arrowIcon {
 	width: 2rem;
 	height: 2rem;
@@ -47,8 +43,7 @@
 	background: var(--orange);
 	border-radius: 5px;
 }
-
-.arrowIcon  > svg{
+.arrowIcon > svg {
 	width: 2rem;
 	height: 2rem;
 }

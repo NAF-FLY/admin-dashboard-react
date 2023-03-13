@@ -1,15 +1,16 @@
-import Statistic from '../../components/Statistic/Statistic'
+import Orders from '../../components/Orders/Orders'
+import Statistics from '../../components/Statistics/Statistics'
 import { cardsData, groupNumber } from '../../data'
 import style from './Dashboard.module.css'
-
 const Dashboard = () => {
 	return (
 		<div className={style.container}>
-			{/* {left side} */}
+			{/* left side */}
 			<div className={style.dashboard}>
 				<div className={`${style.dashboardHead} theme-container`}>
 					<div className={style.head}>
 						<span>Dashboard</span>
+
 						<div className={style.durationButton}>
 							<select>
 								<option value=''>1 week</option>
@@ -25,6 +26,7 @@ const Dashboard = () => {
 									<span>{card.title}</span>
 									<span>+{card.change}</span>
 								</div>
+
 								<div className={style.cardAmount}>
 									<span>$</span>
 									<span>{groupNumber(card.amount)}</span>
@@ -33,9 +35,11 @@ const Dashboard = () => {
 						))}
 					</div>
 				</div>
-				<Statistic />
+
+				<Statistics />
 			</div>
-			<div className={style.orders}>orders</div>
+
+			<Orders />
 		</div>
 	)
 }
